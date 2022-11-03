@@ -1,0 +1,150 @@
+@media screen and (max-width: 1700px) {
+    body {
+     
+        background-size: 130%;
+        background-position-y: center;
+        
+    }
+    .wrapper{
+        width: 95%;
+    }
+    .col1, .col2, .col3, .footer{
+        max-width: 500px;
+    }
+    
+}
+@media screen and (max-width: 1300px) {
+    
+    body {
+       
+        background-size: 140%;
+        
+        
+        background-position-y: center;
+    }
+    .wrapper{
+        
+        width: 95%;
+        
+    }
+    .col1 .col2 .col3, .footer{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+       
+        background-size: 500%;
+        background-position-y: center;
+    }
+    .wrapper{
+        
+        width: 95%;
+        
+    }
+    .col1 .col2 .col3, .footer{
+        max-width: 100%;
+        width: 800px;
+    }
+    .navbar{
+        background-color: transparent;
+        .menu{
+            display: block;
+            
+        }
+       
+
+
+
+
+        .nav{
+            display: none;
+        }
+    }
+
+    .navbar.active{
+        width: 100%;        
+        background-color: rgba(0, 0, 0, 0.678);
+        .menu{
+            display: block;
+            position: absolute;
+            
+            right: 10px;
+            top: 10px;
+            z-index: 100;
+            .line:nth-child(1){
+                transform: skewY(45deg);
+                background-color: #fff;
+                position: relative;
+                border-radius: 100px;
+              top:15px;
+                height: 10px;
+            }
+            .line:nth-child(2){
+                transform: skewY(-45deg);
+                background-color: #fff;
+                border-radius: 100px;
+                position: relative;
+                top: -10px;
+                height: 10px;
+            }
+            .line:nth-child(3){
+                display: none;
+            }
+        }
+        .nav{
+            display: block;
+        }
+    }
+    
+}
+
+
+
+.special{
+
+    color: #fff;
+     box-shadow:5px 5px 10px #000;
+        font-size: 3rem;
+        
+        font-family: 'Dancing Script';
+    
+        background-color:#ff5e00;
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .special::before{
+        content: ' ';
+        background: url('special.svg');
+        display: block;
+        float: left;
+        
+        width: 15px;
+        height: 54px;
+        background-size: stretch;
+        position: relative;
+        top:3px;
+        left:-13px;
+        
+    }
+    
+    .special::after{
+        content: ' ';
+        background: url('special-right.svg');
+        display: block;
+        
+        float: right;
+        
+        width: 13px;
+        height: 54px;
+        background-size: stretch;
+        position: relative;
+        top:3px;
+        left:13px;
+        
+    }
+
+

@@ -1,0 +1,127 @@
+.footer {
+    background-color: #ff5e00;
+    text-align: center;
+    float: right;
+    margin-top: 50px;
+
+    padding: 40px;
+    max-width: 420px;
+    flex-grow: 1;
+    align-self: center;
+    align-content: center;
+    border-radius: 10px;
+
+    h2 {
+        background-color: #000;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 60px;
+        border-radius: 10px;
+    }
+    ul {
+        list-style-type: none;
+        font-weight: 800;
+        margin: 20px 0;
+        li {
+            margin: 10px 0;
+        }
+    }
+    p {
+        font-weight: 800;
+    }
+}
+
+.contact {
+    border-radius: 50%;
+    background-color: #db431d;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+
+    box-shadow: 0px 0px 10px black;
+
+    transition-property: width height border-radius;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    overflow: hidden;
+
+    h3 {
+        position: relative;
+        top: -100px;
+    }
+    p {
+        position: relative;
+        left: -250px;
+    }
+    .icon-phone {
+        position: relative;
+        top: -80px;
+        cursor: pointer;
+        transition: 400ms ease-out;
+    }
+}
+.contact:hover {
+    background-color: #ff5e00;
+    background: radial-gradient(#ff5e00, #b64605);
+    transform: scale(1.2);
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 10px;
+
+    transition-property: width height border-radius background-color;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    h3 {
+        background-color: #000;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: #ff5e00;
+
+        margin-bottom: 10px;
+        padding: 10px 0;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+        top: 0px;
+        transition-property: top;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+    }
+    p {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+
+        left: 0px;
+
+        transition-property: left;
+        transition-duration: 500ms;
+        transition-timing-function: ease;
+    }
+    .icon-phone {
+        width: 80px;
+        position: relative;
+        top: 20px;
+        border-radius: 50%;
+    }
+}
+
+.contact .icon-phone {
+    content: url("phone-call.svg");
+}
+
+.icon-phone:hover {
+    transform: scale(1.2);
+    transition: 400ms ease-in;
+}

@@ -1,0 +1,27 @@
+.footer {
+  background-color: #000;
+}
+
+.contact {
+  border-radius: 50%;
+  background-color: #ff5e00;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.contact h3 {
+  display: none;
+}
+
+.contact p {
+  display: none;
+}
+
+.contact::after {
+  content: url("phone-call.svg");
+  color: red;
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,27 @@
+@media screen and (max-width: 1700px) {
+  body {
+    background-size: 130%;
+    background-position-y: top;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  .col1, .col2, .col3 {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    background-size: 140%;
+    background-position-y: top;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: 500%;
+    background-position-y: center;
+  }
+}
+/*# sourceMappingURL=media.css.map */
